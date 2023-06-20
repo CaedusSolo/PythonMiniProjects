@@ -97,7 +97,7 @@ def play():    #  to be displayed everytime user starts a game
             dealerCards.append(deal_card())
             dealerTotal = calculate_total(dealerCards)
 
-        print(f"Your cards: {playerCards}, current total: {playerTotal}")
+        print(f"Your cards: [ {', '.join(playerCards)} ], current total: {playerTotal}")
         print(f"Dealer's first card: {card_values.get(dealerCards[0])}")
         
 
