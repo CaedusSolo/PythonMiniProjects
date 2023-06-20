@@ -64,7 +64,7 @@ def hit(playerCards,dealerCards,playerTotal,dealerTotal):
         print(f"Dealer's final hand:  [ {', '.join(dealerCards) }] , final total: {dealerTotal}")
 
         if playerTotal > 21:
-            print("You busted! You lose :( )")
+            print("You busted! You lose :( ")
         elif dealerTotal > 21:
             print("Dealer busted! You win! ")
         elif playerTotal > dealerTotal:
