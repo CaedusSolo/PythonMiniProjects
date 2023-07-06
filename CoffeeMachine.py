@@ -97,6 +97,7 @@ def calculate_change(coffee, coins_inserted):
 def display():
 
     user_choice = input("What would you like? (espresso/latte/cappuccino): ").lower()
+    
     if user_choice == "off":
         return 
     elif user_choice == "report":
