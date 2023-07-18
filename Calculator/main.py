@@ -48,7 +48,7 @@ window.title("Calculator Program")
 window.minsize(height=450, width=500)
 window.config(padx=25, pady=25)
 
-display_entry = Entry(window, font=WIDGET_FONT, bg="black", fg="white",state="readonly")
+display_entry = Entry(window, font=WIDGET_FONT, bg="black", fg="white")
 display_entry.focus()
 display_entry.configure(insertbackground="blue",width=35,)
 display_entry.grid(column=0, row=0, columnspan=4,)
