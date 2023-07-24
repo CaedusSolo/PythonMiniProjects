@@ -181,7 +181,7 @@ class CurrencyConverter:
         to_currency = self.to_combobox.get()[:3]
         amount = int(self.amount_entry.get())
         end_point = f"https://v6.exchangerate-api.com/v6/{api_key}/latest/{from_currency}"
-
+        self.amount_entry.delete(0,tk.END)
         response = requests.get(end_point)
         response.raise_for_status()
         data = response.json()["conversion_rates"][to_currency]
