@@ -24,7 +24,7 @@ class TicTacToe:
 
         self.canvas = tk.Canvas(self.frame,bg="white",highlightthickness=0,width=650,height=550)
         self.canvas.grid(row=0,column=0)
-        self.board_img_path = tk.PhotoImage(file="Tkinter\\Tic Tac Toe\\images\\board.png")
+        self.board_img_path = tk.PhotoImage(file="Tkinter\\Tkinter Tic Tac Toe\\images\\board.png")
         self.board_img = self.canvas.create_image((330,270),image=self.board_img_path)
 
         self.turn_label = tk.Label(self.root,bg="white",fg="black",font=("poppins",23,"bold"),
